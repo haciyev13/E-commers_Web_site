@@ -85,7 +85,8 @@
 }
 .navbar-nav .nav-item:hover .dropdown{
     display: block;
-    left: 5%;
+    left: 0%;
+    background-color: #fff;
 }
 .navbar-nav .nav-item .dropdown ul li{
     padding: 5px 0;
@@ -107,4 +108,107 @@
 }
 .dropdown-ul ul{
     width: 25%;
+}
+
+.dropdown-mens{
+    padding: 5px 0;
+    margin-top: 10px;
+    position: absolute;
+    display: none;
+}
+.navbar-nav .nav-item:hover .dropdown-mens{
+    transition: all 0.7s;
+    display: block;
+}
+.dropdown-mens li{
+    background-color: #000000;
+    padding: 5px;
+    font-weight: 600;
+    font-size: 16px;
+}
+.dropdown-mens li a{
+    font-weight: 600;
+    font-size: 16px;
+    color: #939090;
+}
+/* NAVBAR PHOTO */
+.navbar-photo .photo{
+    display: flex;
+    overflow: hidden;
+    overflow-x: scroll;
+}
+.navbar-photo .photo .photo-block{
+    position: relative;
+    right: 100%;
+    margin: auto;
+}
+.navbar-photo .photo .photo-block button{
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: 1px solid #939090;
+    color: #fff;
+    background-color: #f67171;
+    outline: none;
+    transition: all 0.5s;
+}
+.navbar-photo .photo .photo-block button:hover{
+    color: #fff;
+    background-color: #000;
+    outline: none;
+}
+.navbar-photo .photo .photo-block p,h1,button{
+    margin-left: 70px;
+}
+.navbar-photo .photo .photo-block .top-text{
+    font-size: 40px;
+    width: 300px;
+    padding: 15px 0;
+}
+.navbar-photo .photo .photo-block .heading{
+    font-size: 40px;
+    width: 500px;
+    padding-bottom: 15px;
+    font-weight: 900;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.navbar-photo .photo .photo-block .bottom-text{
+    font-size: 35px;
+    color: #4a4848;
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+/* SECTION-SCROLL */
+.scroll{
+    display: flex;
+    overflow: hidden;
+    overflow-x: scroll;
+}
+.scroll .scroll-block{
+    display: flex;
+    align-items: center;
+    border: 1px solid #dbd3d3;
+    width: 25%;
+    padding: 15px;
+    border-radius: 10px;
+    margin-right: 40px;
+}
+
+.scroll .scroll-block .scroll-img img{
+    width: 50px;
+    background-color: #b3afaf;
+}
+.scroll .scroll-block .scroll-text .scroll-text-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 250px;
+    padding: 0px 10px 0 10px;
+}
+.scroll .scroll-block .scroll-text .scroll-text-header p{
+    color: #858383;
+}
+.scroll .scroll-block .scroll-text a{
+    padding: 10px;
+    font-weight: bold;
+    color: #f67171;
 }
