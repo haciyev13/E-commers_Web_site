@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+.container{
+    padding: 20px 5%;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-logo img{
+    width: 150px;
+}
+.header-source-input{
+    width: 65%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.header-source-input a i{
+    position: absolute;
+    right: 10px;
+    bottom: 30%;
+    color: #4a4848;
+    font-size: 17px;
+}
+.header-source-input a i:hover{
+    color: #7a3106;
+}
+.header-source-input input{
+    width: 100%;
+    padding: 13px;
+    border-radius: 9px;
+    border: 1px solid #d5d3d3;
+}
+.header-source-input input::placeholder{
+    font-size: 16px;
+}
+.header-icons{
+    display: flex;
+    gap: 10px;
+}
+.header-icons-link{
+    padding-right: 10px;
+}
+.header-icons i{
+    font-size: 25px;
+    color: #4a4848;
+}
+.header-icons i span{
+    position: relative;
+    bottom: 20px;
+    font-size: 10px;
+    background-color: hsl(0, 100%, 70%);
+    color: #fff;
+    padding: 4px;
+    border-radius: 50%;
+}
+.navbar-nav{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    position: relative;
+}
+.navbar-nav .nav-item .nav-link{
+    color: #4a4848;
+    font-weight: 600;
+    font-size: 16px;
+    transition: all 0.1s;
+}
+.navbar-nav .nav-item .nav-link:hover{
+    color: #c24405;
+    padding-bottom: 4px;
+    border-bottom: 2px solid #c24405;
+}
+.navbar-nav .nav-item .dropdown{
+    display: none;
+    position: absolute;
+    width: 100%;
+}
+.navbar-nav .nav-item:hover .dropdown{
+    display: block;
+    left: 5%;
+}
+.navbar-nav .nav-item .dropdown ul li{
+    padding: 5px 0;
+}
+.navbar-nav .nav-item .dropdown ul li a{
+    padding: 5px 0;
+    color: #4a4848;
+}
+.navbar-nav .nav-item .dropdown ul li a h3{
+    padding: 5px 0;
+    color: #000;
+}
+.navbar-nav .nav-item .dropdown ul li a img{
+    width: 200px;
+}
+.dropdown-ul{
+    display: flex;
+    justify-content: center;
+}
+.dropdown-ul ul{
+    width: 25%;
+}
